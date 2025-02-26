@@ -22,4 +22,6 @@ const CarDetailsPage = () => {
   );
 };
 
-export default CarDetailsPage;
+export default CarDetailsPage;console.log('CarDetailsPage component rendered');
+console.log('isLoading:', isLoading);
+console.log('id:', id);

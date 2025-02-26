@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "travel-trucks",
+=======
+  "name": "my-rental-car-app",
+>>>>>>> 58520f0ff8b17d85c9878418d36eb6c9ccd8d44d
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^2.5.1",
     "axios": "^1.7.9",
     "clsx": "^2.1.1",
@@ -33,3 +38,22 @@
     "vite": "^6.0.5"
   }
 }
+=======
+    "axios": "^1.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
+  }
+}
+>>>>>>> 58520f0ff8b17d85c9878418d36eb6c9ccd8d44d
