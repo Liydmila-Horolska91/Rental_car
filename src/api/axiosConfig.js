@@ -1,22 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 const instance = axios.create({
-  baseURL: 'https://car-rental-api.goit.global/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
-
-export const getCars = async (params) => {
-  const { data } = await instance.get('/cars', { params });
-  return data;
-};
-
-export const getCarById = async (id) => {
-  const { data } = await instance.get(`/cars/${id}`);
-  return data;
-};
-
-export const getBrands = async () => {
-    const { data } = await instance.get('/cars/brands');
-    return data;
-};
 
 export default instance;
