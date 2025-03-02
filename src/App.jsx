@@ -1,20 +1,21 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import HomePage from "./pages/HomePage";
-import CatalogPage from "./pages/CatalogPage";
-// import CarDetailsPage from "./pages/CarDetailsPage";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Catalog from './components/Catalog/Catalog';
+import CarDetails from './components/CarDetails/CarDetails';
+import Favorite from './components/Shared/Favorite/Favorite';
 
-
-const App = () => {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="catalog" element={<CatalogPage />} />
-        <Route path="car/:id" element={<CarDetailsPage />} />
-      </Route>
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/catalog/:id" element={<CarDetails />} />
+        <Route path="/favorites" element={<Favorite />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
