@@ -11,5 +11,3 @@ export const fetchCarById = async (id) => {
   const response = await axios.get(`/cars/${id}`);
   return response.data;
 };
-
-// Додайте інші необхідні функції для взаємодії з API
